@@ -80,15 +80,13 @@ To customize the boot logo or Miracast/DLNA guide images:
 /res/drawable/dlna.jpg
 ```
 
-	•	These files control the guide screen and boot visuals.
-
-	5.	Replace with Custom Images
+5.	Replace with Custom Images
 	•	Prepare images in the same format (JPG/PNG) and resolution.
 	•	Replace the existing images with your custom ones.
-	6.	Repack the Firmware
+6.	Repack the Firmware
 	•	Repack system.img using your extractor tool or mkfs.ext4.
 	•	Reassemble the firmware image if needed.
-	7.	Flash Back to Device
+7.	Flash Back to Device
 	•	Use Rockchip Batch Tool or ADB/Fastboot to flash the modified firmware.
 	•	Ensure to back up your original firmware before flashing.
 
