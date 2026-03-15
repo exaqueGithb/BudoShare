@@ -68,6 +68,7 @@ To customize the boot logo or Miracast/DLNA guide images:
 
    ```bash
    sudo mount -o loop system.img /mnt/system
+   ```
 
 	•	Or use an ext4 extractor tool to unpack the contents.
 
