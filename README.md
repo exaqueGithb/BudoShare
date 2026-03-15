@@ -52,8 +52,6 @@ ls -l /data/media/*.png
 ```
 ---
 
-볼드(**) 다 빼고 깃허브 Markdown 구조만 유지한 버전이야. 그대로 붙여넣으면 됨.
-
 ### Changing Boot and Miracast/DLNA Images
 
 To customize the boot logo or Miracast/DLNA guide images:
