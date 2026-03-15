@@ -50,7 +50,7 @@ find / -iname "*.png" 2>/dev/null
 ls -l /system/bin/*.jpg
 ls -l /data/media/*.png
 ```
-
+---
 
 ### Changing Boot and Miracast/DLNA Images
 
@@ -87,6 +87,7 @@ sudo mount -o loop system.img /mnt/system
 	•	Use Rockchip Batch Tool or ADB/Fastboot to flash the modified firmware.
 	•	Ensure to back up your original firmware before flashing.
 
+---
 
 ### Firmware Upload (using Rockchip Batch Tool)
 
