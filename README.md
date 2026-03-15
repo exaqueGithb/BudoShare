@@ -52,6 +52,42 @@ ls -l /data/media/*.png
 ```
 
 
+### Changing Boot and Miracast/DLNA Images
+
+To customize the boot logo or Miracast/DLNA guide images:
+	1.	Obtain the Firmware Image
+	•	Download the firmware .img file provided on the device’s manufacturer site or from the repository.
+	2.	Extract the Firmware
+	•	Use a tool like 7-Zip, img unpacker, or simg2img to extract the firmware.
+	•	Locate system.img inside the extracted firmware.
+	3.	Mount or Extract system.img
+	•	On Linux/macOS, you can mount using:
+
+sudo mount -o loop system.img /mnt/system
+
+
+	•	Or use an ext4 extractor tool to unpack the contents.
+
+	4.	Locate the Images
+	•	Inside system.img, find the relevant images such as:
+
+/res/drawable/miracast.jpg
+/res/drawable/dlna.jpg
+
+
+	•	These files control the guide screen and boot visuals.
+
+	5.	Replace with Custom Images
+	•	Prepare images in the same format (JPG/PNG) and resolution.
+	•	Replace the existing images with your custom ones.
+	6.	Repack the Firmware
+	•	Repack system.img using your extractor tool or mkfs.ext4.
+	•	Reassemble the firmware image if needed.
+	7.	Flash Back to Device
+	•	Use Rockchip Batch Tool or ADB/Fastboot to flash the modified firmware.
+	•	Ensure to back up your original firmware before flashing.
+
+
 ### Firmware Upload (using Rockchip Batch Tool)
 
 * Open Rockchip Batch Tool
