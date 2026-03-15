@@ -78,7 +78,7 @@ To customize the boot logo or Miracast/DLNA guide images:
    ```bash
 /res/drawable/miracast.jpg
 /res/drawable/dlna.jpg
-   ```
+```
 
 	•	These files control the guide screen and boot visuals.
 
