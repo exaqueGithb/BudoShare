@@ -52,19 +52,24 @@ ls -l /data/media/*.png
 ```
 ---
 
+볼드(**) 다 빼고 깃허브 Markdown 구조만 유지한 버전이야. 그대로 붙여넣으면 됨.
+
 ### Changing Boot and Miracast/DLNA Images
 
 To customize the boot logo or Miracast/DLNA guide images:
-	1.	Obtain the Firmware Image
-	•	Download the firmware .img file provided on the device’s manufacturer site or from the repository.
-	2.	Extract the Firmware
-	•	Use a tool like 7-Zip, img unpacker, or simg2img to extract the firmware.
-	•	Locate system.img inside the extracted firmware.
-	3.	Mount or Extract system.img
-	•	On Linux/macOS, you can mount using:
 
-sudo mount -o loop system.img /mnt/system
+1. Obtain the Firmware Image
+   - Download the firmware `.img` file provided on the device’s manufacturer site or from the repository.
 
+2. Extract the Firmware
+   - Use a tool like `7-Zip`, `img unpacker`, or `simg2img` to extract the firmware.
+   - Locate `system.img` inside the extracted firmware.
+
+3. Mount or Extract `system.img`
+   - On Linux/macOS, you can mount it using:
+
+   ```bash
+   sudo mount -o loop system.img /mnt/system
 
 	•	Or use an ext4 extractor tool to unpack the contents.
 
@@ -73,7 +78,6 @@ sudo mount -o loop system.img /mnt/system
 
 /res/drawable/miracast.jpg
 /res/drawable/dlna.jpg
-
 
 	•	These files control the guide screen and boot visuals.
 
